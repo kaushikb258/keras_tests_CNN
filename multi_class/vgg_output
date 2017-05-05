@@ -1,0 +1,240 @@
+total number of images =  21917
+(17533, 224, 224, 3)
+(17533, 38)
+Base Model = VGG16 
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 224, 224, 3)       0         
+_________________________________________________________________
+block1_conv1 (Conv2D)        (None, 224, 224, 64)      1792      
+_________________________________________________________________
+block1_conv2 (Conv2D)        (None, 224, 224, 64)      36928     
+_________________________________________________________________
+block1_pool (MaxPooling2D)   (None, 112, 112, 64)      0         
+_________________________________________________________________
+block2_conv1 (Conv2D)        (None, 112, 112, 128)     73856     
+_________________________________________________________________
+block2_conv2 (Conv2D)        (None, 112, 112, 128)     147584    
+_________________________________________________________________
+block2_pool (MaxPooling2D)   (None, 56, 56, 128)       0         
+_________________________________________________________________
+block3_conv1 (Conv2D)        (None, 56, 56, 256)       295168    
+_________________________________________________________________
+block3_conv2 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_conv3 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_pool (MaxPooling2D)   (None, 28, 28, 256)       0         
+_________________________________________________________________
+block4_conv1 (Conv2D)        (None, 28, 28, 512)       1180160   
+_________________________________________________________________
+block4_conv2 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_conv3 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_pool (MaxPooling2D)   (None, 14, 14, 512)       0         
+_________________________________________________________________
+block5_conv1 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv2 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv3 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_pool (MaxPooling2D)   (None, 7, 7, 512)         0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 25088)             0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 4096)              102764544 
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 4096)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 38)                155686    
+=================================================================
+Total params: 117,634,918.0
+Trainable params: 102,920,230.0
+Non-trainable params: 14,714,688.0
+_________________________________________________________________
+nb, nv =  4383 1096
+size of x_train =  21.113659392  GB
+size of x_test =  5.279318016  GB
+-----------------------------------------------
+epoch =  0
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+68s - loss: 3.3722 - acc: 0.1186 - val_loss: 3.0728 - val_acc: 0.1095
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 2.9093 - acc: 0.1962 - val_loss: 2.4293 - val_acc: 0.3939
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 2.3663 - acc: 0.4102 - val_loss: 1.8570 - val_acc: 0.5468
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.9817 - acc: 0.4919 - val_loss: 1.5207 - val_acc: 0.6902
+-----------------------------------------------
+epoch =  1
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.6801 - acc: 0.5667 - val_loss: 1.2906 - val_acc: 0.7546
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.4251 - acc: 0.6315 - val_loss: 1.1485 - val_acc: 0.7598
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.2969 - acc: 0.6774 - val_loss: 1.0302 - val_acc: 0.7673
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.1984 - acc: 0.6861 - val_loss: 0.9373 - val_acc: 0.8029
+-----------------------------------------------
+epoch =  2
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 1.0933 - acc: 0.7128 - val_loss: 0.8655 - val_acc: 0.8150
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.9763 - acc: 0.7497 - val_loss: 0.7919 - val_acc: 0.8271
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.9302 - acc: 0.7611 - val_loss: 0.7383 - val_acc: 0.8344
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.8782 - acc: 0.7700 - val_loss: 0.7102 - val_acc: 0.8346
+-----------------------------------------------
+epoch =  3
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.8564 - acc: 0.7682 - val_loss: 0.6785 - val_acc: 0.8460
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.7652 - acc: 0.7931 - val_loss: 0.6307 - val_acc: 0.8570
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.7387 - acc: 0.7979 - val_loss: 0.6098 - val_acc: 0.8504
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.7293 - acc: 0.8084 - val_loss: 0.6014 - val_acc: 0.8522
+-----------------------------------------------
+epoch =  4
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.7035 - acc: 0.8088 - val_loss: 0.5696 - val_acc: 0.8583
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.6251 - acc: 0.8282 - val_loss: 0.5611 - val_acc: 0.8672
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.6457 - acc: 0.8261 - val_loss: 0.5369 - val_acc: 0.8677
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.6200 - acc: 0.8303 - val_loss: 0.5103 - val_acc: 0.8736
+-----------------------------------------------
+epoch =  5
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.6077 - acc: 0.8344 - val_loss: 0.5199 - val_acc: 0.8643
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.5442 - acc: 0.8542 - val_loss: 0.5120 - val_acc: 0.8661
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.5521 - acc: 0.8531 - val_loss: 0.4772 - val_acc: 0.8816
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.5594 - acc: 0.8451 - val_loss: 0.4766 - val_acc: 0.8816
+-----------------------------------------------
+epoch =  6
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.5309 - acc: 0.8544 - val_loss: 0.4508 - val_acc: 0.8825
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4865 - acc: 0.8585 - val_loss: 0.4395 - val_acc: 0.8887
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4992 - acc: 0.8642 - val_loss: 0.4368 - val_acc: 0.8834
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4939 - acc: 0.8654 - val_loss: 0.4274 - val_acc: 0.8853
+-----------------------------------------------
+epoch =  7
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4769 - acc: 0.8679 - val_loss: 0.4206 - val_acc: 0.8953
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4451 - acc: 0.8727 - val_loss: 0.4000 - val_acc: 0.9010
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4487 - acc: 0.8757 - val_loss: 0.4069 - val_acc: 0.8912
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4405 - acc: 0.8791 - val_loss: 0.3908 - val_acc: 0.8948
+-----------------------------------------------
+epoch =  8
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4356 - acc: 0.8827 - val_loss: 0.3824 - val_acc: 0.9005
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.3964 - acc: 0.8925 - val_loss: 0.3875 - val_acc: 0.8958
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4199 - acc: 0.8804 - val_loss: 0.3767 - val_acc: 0.9015
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.4264 - acc: 0.8757 - val_loss: 0.3692 - val_acc: 0.9005
+-----------------------------------------------
+epoch =  9
+batch =  0
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.3973 - acc: 0.8962 - val_loss: 0.3625 - val_acc: 0.9033
+batch =  1
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.3690 - acc: 0.9033 - val_loss: 0.3688 - val_acc: 0.9060
+batch =  2
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.3858 - acc: 0.8912 - val_loss: 0.3532 - val_acc: 0.9088
+batch =  3
+Train on 4383 samples, validate on 4384 samples
+Epoch 1/1
+66s - loss: 0.3814 - acc: 0.8925 - val_loss: 0.3524 - val_acc: 0.9026
